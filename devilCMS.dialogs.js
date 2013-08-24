@@ -34,16 +34,16 @@ devilCMS.dialogs = {
 					icons: { 
 			        	primary: 'ui-icon-check'
 					},
-			        click: function(){
-			        	options.submit(div);
-			        }
+				        click: function(){
+				        	options.submit(div);
+				        }
 				},
 				cancel: {
 					text: options.labels.cancel,
 					icons: { 
 			        	primary: 'ui-icon-close'
 					},
-			        click: function(){
+			        	click: function(){
 						div.dialog('close');
 					}
 				}
@@ -70,10 +70,10 @@ devilCMS.dialogs = {
 					icons: { 
 			        	primary: 'ui-icon-check'
 					},
-			        click: function(){
+					click: function(){
 						div.dialog('close');
 					}
-	      		}
+	      			}
 			},
 			close: function(){
 				if(typeof(callback) == 'function') callback();
@@ -100,8 +100,8 @@ devilCMS.dialogs = {
 					icons: { 
 			        	primary: 'ui-icon-check'
 					},
-			        click: function(){
-			        	confirmed = true;
+					click: function(){
+			        		confirmed = true;
 						div.dialog('close');
 					}
 				},
@@ -110,8 +110,8 @@ devilCMS.dialogs = {
 					icons: { 
 			        	primary: 'ui-icon-close'
 					},
-			        click: function(){
-			        	confirmed = false;
+			        	click: function(){
+			        		confirmed = false;
 						div.dialog('close');
 					}
 				}
