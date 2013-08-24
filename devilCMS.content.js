@@ -2,9 +2,8 @@ devilCMS.content = {
 	currentModuleID: 0,
 	load: function(cid, params){
 		if(!params) params = {};
-		if(cid == devilCMS.navigation.currentCID){
-			return;
-		}
+		if(cid == devilCMS.navigation.currentCID) return;
+		
 		devilCMS.content.currentModuleID = 0;
 		devilCMS.navigation.currentCID = cid;
 		window.location.href = '#'+cid;
