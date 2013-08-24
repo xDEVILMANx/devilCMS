@@ -85,7 +85,6 @@ devilCMS.dialogs = {
 	
 	confirm: function(title, text, callback){
 		var div = $('<div />').html(text);
-		var result = false;
 		var confirmed = false;
 		div.dialog({
 			title: title,
