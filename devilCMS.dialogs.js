@@ -9,6 +9,8 @@ devilCMS.dialogs = {
 				cancel: 'Cancel',
 				submit: 'Submit'
 			},
+			width: 'auto',
+			height: 'auto',
 			submit: null
 		};
 		options = $.extend(true, defaults, options);
@@ -17,6 +19,8 @@ devilCMS.dialogs = {
 		div.dialog({
 			title: 'Loading...',
 			modal: true,
+			width: options.width,
+			height: options.height,
 			create: function(){
 				devilCMS.request.html(options.url, options.data, function(html){
 					div.dialog('option', 'title', options.title);
