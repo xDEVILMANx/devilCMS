@@ -25,9 +25,7 @@ devilCMS.scripts = {
 				  			}
 				  			$.globalEval('devilCMS.scripts.cache = { '+scriptText+' }');
 				  			if(typeof(devilCMS.scripts.cache.init) != 'undefined' && typeof(devilCMS.scripts.cache.init) == 'function'){
-				  				// setTimeout(function(){
-				  					devilCMS.scripts.cache.init(callback);
-				  				// }, 500);
+			  					devilCMS.scripts.cache.init(callback);
 				  			}else{
 				  				if(typeof(callback) == 'function') callback();
 				  			}
@@ -39,17 +37,15 @@ devilCMS.scripts = {
 	},
 	clearCache: function(callback){
 		if(typeof(devilCMS.scripts.cache.end) != 'undefined' && typeof(devilCMS.scripts.cache.end) == 'function'){
-				devilCMS.scripts.cache.end(function(){
-					delete devilCMS.scripts.cache;
-	  			devilCMS.scripts.cache = new Object;
-	  			if(typeof(callback) == 'function') callback();
-				});
-			}else{
+			devilCMS.scripts.cache.end(function(){
+				delete devilCMS.scripts.cache;
+  				devilCMS.scripts.cache = new Object;
+  				if(typeof(callback) == 'function') callback();
+			});
+		}else{
   			delete devilCMS.scripts.cache;
   			devilCMS.scripts.cache = new Object;
-  			if(typeof(callback) == 'function'){
-  				callback();
-  			}
+  			if(typeof(callback) == 'function') callback();
 		}
 	}
 }
