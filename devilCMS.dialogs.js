@@ -68,7 +68,7 @@ devilCMS.dialogs = {
 				closeButton: {
 					text: "Ok",
 					icons: { 
-			        	primary: 'ui-icon-check'
+			        		primary: 'ui-icon-check'
 					},
 					click: function(){
 						div.dialog('close');
@@ -98,7 +98,7 @@ devilCMS.dialogs = {
 				comfirmButton: {
 					text: "Yes",
 					icons: { 
-			        	primary: 'ui-icon-check'
+			        		primary: 'ui-icon-check'
 					},
 					click: function(){
 			        		confirmed = true;
@@ -108,7 +108,7 @@ devilCMS.dialogs = {
 				cancelButton: {
 					text: "No",
 					icons: { 
-			        	primary: 'ui-icon-close'
+			        		primary: 'ui-icon-close'
 					},
 			        	click: function(){
 			        		confirmed = false;
