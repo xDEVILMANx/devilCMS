@@ -25,7 +25,6 @@ devilCMS.content = {
 		};
 		devilCMS.elements.container.animate({scrollTop: 0}, devilCMS.elements.container.scrollTop() / 4 , 'linear', function(){
 			showSpinnerHideContent(function(){
-				$(".ui-dialog-content").dialog("destroy");
 				devilCMS.scripts.clearCache(function(){
 					devilCMS.elements.content.empty();
 					$.ajax({
