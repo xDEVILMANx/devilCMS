@@ -32,7 +32,7 @@ devilCMS.dialogs = {
 					text: options.labels.submit,
 					disabled: true,
 					icons: { 
-			        	primary: 'ui-icon-check'
+			        		primary: 'ui-icon-check'
 					},
 				        click: function(){
 				        	options.submit(div);
@@ -41,7 +41,7 @@ devilCMS.dialogs = {
 				cancel: {
 					text: options.labels.cancel,
 					icons: { 
-			        	primary: 'ui-icon-close'
+			        		primary: 'ui-icon-close'
 					},
 			        	click: function(){
 						div.dialog('close');
