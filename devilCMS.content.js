@@ -35,15 +35,15 @@ devilCMS.content = {
 					  	cache: false,
 					 	dataType: "json",
 					  	async: true,
-					  	error: function(XMLHttpRequest, textStatus, errorThrown){
-					  		alert('Error: '+XMLHttpRequest.responseText);
-					  	},
 					  	beforeSend: function(jqXHR, settings){
 			        			jqXHR.setRequestHeader("DEVILCMS_REQUESTED_TYPE", "json");
 			        			jqXHR.setRequestHeader("DEVILCMS_REQUESTED_CID", cid);
 			        			jqXHR.setRequestHeader("DEVILCMS_CURRENT_MODULE", devilCMS.content.currentModuleID);
 			        			jqXHR.setRequestHeader("DEVILCMS_REQUESTED_FILE", 'core/ajax/getContent.php');
 			      			},
+			      			error: function(XMLHttpRequest, textStatus, errorThrown){
+					  		alert('Error: '+XMLHttpRequest.responseText);
+					  	},
 					  	success: function(content){
 					  		devilCMS.content.currentModuleID = content.moduleID;
 					  		devilCMS.elements.content.html(content.html);
