@@ -4,10 +4,8 @@
 	require(dirname(__FILE__)."/classes/class.ini.php");
 	$DEVIL_CMS_INI = Ini_Struct::parse(dirname(__FILE__)."/configs/devilCMS.ini", true);
 	
-	
 	require($DEVIL_CMS_INI['CMS']['PATH']."/configs/config.db.connect.php");
 	require($DEVIL_CMS_INI['CMS']['PATH']."/configs/config.db.php");
-	
 	
 	require($DEVIL_CMS_INI['CMS']['PATH']."/".$DEVIL_CMS_INI['FILES']['CLASSES']['SQL']);
 	require($DEVIL_CMS_INI['CMS']['PATH']."/".$DEVIL_CMS_INI['FILES']['CLASSES']['CONTENT']);
