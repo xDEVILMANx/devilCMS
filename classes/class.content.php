@@ -148,6 +148,7 @@
 			return $scripts;
 		}
 		
+		// TODO: Change all the arguments to just one array and $id
 		function updateContent($id, $name, $desc, $module_id, $groups, $start, $startLogin, $path, $scripts){
 			global $CONN;
 			if(!is_array($scripts)){
@@ -167,6 +168,7 @@
 			mysql_query($sql, $CONN) or die(mysql_error());
 		}
 		
+		// TODO: Change all the arguments to just one array and $id
 		function insertContent($cid, $name, $desc, $moduleID, $groups, $start, $startLogin, $path, $scripts){
 			global $CONN;
 			$sql = "INSERT INTO ".TAB_CONTENT."
@@ -200,7 +202,6 @@
 			mysql_query($sql, $CONN)or die(mysql_error());
 			return mysql_insert_id();
 		}
-		
 		
 		function getContentGroups($cid){
 			global $CONN;
