@@ -4,8 +4,8 @@ devilCMS.request = {
 		var response = null;
 		$.ajax({
 			type: "POST",
-		    url: "devilCMS/system.php",
-		    data: params,
+			url: "devilCMS/system.php",
+			data: params,
 			cache: false,
 			dataType: dataType,
 			async: true,
