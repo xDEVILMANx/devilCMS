@@ -8,7 +8,7 @@ devilCMS.scripts = {
 			$.each(scripts, function(index, script){
 				$.ajax({
 					type: "GET",
-			    	url: devilCMS.settings.CMS.URL+'/'+script,
+					url: devilCMS.settings.CMS.URL+'/'+script,
 				  	cache: false,
 				  	dataType: "text",
 				  	error: function(XMLHttpRequest, textStatus, errorThrown){
