@@ -27,7 +27,7 @@
 			global $CONN;
 			$sql = "SELECT 	* 
 				FROM 	".TAB_THEMES." 
-				WHERE ".COL_THEMES_ACTIVE." = '1' 
+				WHERE 	".COL_THEMES_ACTIVE." = '1' 
 				LIMIT 	1";
 			$themes = mysql_query($sql, $CONN) or die(mysql_error());
 			$theme = mysql_fetch_assoc($themes);
